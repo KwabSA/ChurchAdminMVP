@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "ChurchAdminMVP.Client",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-SPUTfisq85L83w+1Av3JT4NjoVx/2WRmfClo93DQO8U=",
+    "hash": "sha256-jDUdgDmQrcIJ+dR4U5OaogXGVUwFeDo5H/EQsD+xLjk=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.ikrs475e5v.js"
@@ -1242,16 +1242,16 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "ChurchAdminMVP.Client.wasm",
-        "name": "ChurchAdminMVP.Client.dh3opd2sub.wasm",
-        "hash": "sha256-X6u8l7SHdamr0befhnmIiYiU7B5iFqY/vnlr6VRgpwE=",
+        "name": "ChurchAdminMVP.Client.h88sprcajc.wasm",
+        "hash": "sha256-sV3q17sjsTwndI18b9zDQKU4/eEGzEnOadVaWEZ3jQE=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "ChurchAdminMVP.Client.pdb",
-        "name": "ChurchAdminMVP.Client.mi2okd26j3.pdb",
-        "hash": "sha256-vqr+kd/F07Rv6Av9wSEalJh8nP5xdvRnkH3ryV0GW8w=",
+        "name": "ChurchAdminMVP.Client.wrnorc718b.pdb",
+        "hash": "sha256-XOlgU1bX/wN/EIZWfwV6sp1q7Dg408XA9q6OuGXvX6o=",
         "cache": "force-cache"
       }
     ],

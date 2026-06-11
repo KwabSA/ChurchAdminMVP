@@ -1073,10 +1073,10 @@ C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\obj\Debug\net10.0\Chu
 C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\obj\Debug\net10.0\refint\ChurchAdminMVP.Client.dll
 C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\obj\Debug\net10.0\ChurchAdminMVP.Client.pdb
 C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\obj\Debug\net10.0\ref\ChurchAdminMVP.Client.dll
-C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\bin\Debug\net10.0\wwwroot\_framework\ChurchAdminMVP.Client.dh3opd2sub.wasm
-C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\bin\Debug\net10.0\wwwroot\_framework\ChurchAdminMVP.Client.mi2okd26j3.pdb
-C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\bin\Debug\net10.0\wwwroot\_framework\ChurchAdminMVP.Client.dh3opd2sub.wasm.gz
-C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\bin\Debug\net10.0\wwwroot\_framework\ChurchAdminMVP.Client.mi2okd26j3.pdb.gz
-C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\obj\Debug\net10.0\compressed\nxzzsl6i0p-{0}-dh3opd2sub-dh3opd2sub.gz
-C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\obj\Debug\net10.0\compressed\41puifejqp-{0}-mi2okd26j3-mi2okd26j3.gz
-C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\obj\Debug\net10.0\compressed\msz1cr7h8p-{0}-xnfl4k2dhv-xnfl4k2dhv.gz
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\bin\Debug\net10.0\wwwroot\_framework\ChurchAdminMVP.Client.h88sprcajc.wasm
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\bin\Debug\net10.0\wwwroot\_framework\ChurchAdminMVP.Client.wrnorc718b.pdb
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\bin\Debug\net10.0\wwwroot\_framework\ChurchAdminMVP.Client.h88sprcajc.wasm.gz
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\bin\Debug\net10.0\wwwroot\_framework\ChurchAdminMVP.Client.wrnorc718b.pdb.gz
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\obj\Debug\net10.0\compressed\nxzzsl6i0p-{0}-h88sprcajc-h88sprcajc.gz
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\obj\Debug\net10.0\compressed\41puifejqp-{0}-wrnorc718b-wrnorc718b.gz
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP.Client\obj\Debug\net10.0\compressed\msz1cr7h8p-{0}-yo2v3b4dlz-yo2v3b4dlz.gz
