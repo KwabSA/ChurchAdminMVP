@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChurchAdminMVP.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad8c0a4ca87f9140c06daf8adb741eab044830ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30ba5d1cde1f6e171329104548713693d7cc5ddb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChurchAdminMVP.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChurchAdminMVP.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
