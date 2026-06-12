@@ -74,3 +74,21 @@ All environment setup done. Database live. Ready for API development.
 - GET response: 200 OK with live Supabase data ✅
 - Auto-fields working: dateJoined, isActive ✅
 - Status: ✅ Complete
+
+### Security Fix: Git Tracking Cleanup
+
+- Date: 12-JUN-2026
+- Issue: appsettings.Development.json was tracked by git despite .gitignore
+- Root cause: File was committed before .gitignore rule was in place
+- Fix: git rm --cached to untrack without deleting locally
+- Lesson: Always verify git ls-files after adding .gitignore rules
+- .gitignore now covers: appsettings._.json, bin/, obj/, .vscode/, _.user
+- Status: ✅ Resolved
+
+### Step 12: ASP.NET Identity + JWT Setup
+
+- Date: 12-JUN-2026
+- Packages: Identity.EntityFrameworkCore, JwtBearer, System.IdentityModel.Tokens.Jwt
+- Migration: AddIdentity — created 7 AspNet\* tables in Supabase
+- Tip: Use Session pooler port 5432 for migrations, Transaction pooler port 6543 for app
+- Status: ✅ Complete
