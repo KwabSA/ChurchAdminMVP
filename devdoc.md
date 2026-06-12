@@ -49,3 +49,28 @@
 - Status: Healthy ✅
 - Connection string: stored in local environment only (never committed to git)
 - Status: ✅ Complete
+
+### Step 10: Database Migration Applied
+
+- Date: 11-JUN-2026
+- Migration: InitialCreate
+- Tables confirmed in Supabase: Members, \_\_EFMigrationsHistory
+- Columns: Id, FirstName, LastName, Email, PhoneNumber, DateOfBirth, Gender, Address, DateJoined, IsActive
+- Note: RLS disabled — to be enabled before production
+- Status: ✅ Complete
+
+---
+
+## Phase 0 Complete ✅
+
+All environment setup done. Database live. Ready for API development.
+
+### Step 11: Members API Controller
+
+- Date: 12-JUN-2026
+- Endpoints: GET /api/Members, POST /api/Members, GET /api/Members/{id}, PUT /api/Members/{id}
+- Tested via Swagger UI
+- POST response: 201 Created ✅
+- GET response: 200 OK with live Supabase data ✅
+- Auto-fields working: dateJoined, isActive ✅
+- Status: ✅ Complete

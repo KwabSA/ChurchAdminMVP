@@ -200,3 +200,8 @@ C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP\bin\Debug\net10.0\ru\Microso
 C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\DevDir\BlazorWorks\ChurchAdminMVP\ChurchAdminMVP\obj\Debug\net10.0\ChurchAdminMVP.MvcApplicationPartsAssemblyInfo.cs
