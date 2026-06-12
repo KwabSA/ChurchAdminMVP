@@ -1,1 +1,12 @@
-appsettings.Development.json
+# Development settings (contains secrets)
+**/appsettings.Development.json
+
+# Build outputs
+**/bin/
+**/obj/
+
+# VS Code
+.vscode/
+
+# User secrets
+*.user
