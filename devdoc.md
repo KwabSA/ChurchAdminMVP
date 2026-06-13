@@ -92,3 +92,12 @@ All environment setup done. Database live. Ready for API development.
 - Migration: AddIdentity — created 7 AspNet\* tables in Supabase
 - Tip: Use Session pooler port 5432 for migrations, Transaction pooler port 6543 for app
 - Status: ✅ Complete
+
+### Step 13: Auth Controller (Register + Login)
+
+- Date: [today's date]
+- Endpoints: POST /api/Auth/register, POST /api/Auth/login
+- Register test: 200 OK ✅
+- Login test: 200 OK + JWT token returned ✅
+- Fix applied: Switched to Session pooler port 5432 — resolves timeout issues
+- Status: ✅ Complete
