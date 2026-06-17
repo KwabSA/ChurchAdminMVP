@@ -159,3 +159,12 @@ All environment setup done. Database live. Ready for API development.
 | Register            | ✅ Working |
 | Login               | 🔜 Next    |
 | Profile (view/edit) | 🔜 Pending |
+
+### Step 16: Login Page + Token Storage
+
+- Date: 18-JUN-2026
+- Created TokenService.cs — wraps localStorage via JS interop for JWT persistence
+- Created Login.razor — authenticates and redirects to /profile on success
+- Fix: Added @using ChurchAdminMVP.Client.Services to \_Imports.razor (was causing build failure when omitted per-page)
+- Test: Logged in as member1@churchtest.me — token stored, redirected correctly
+- Status: ✅ Complete

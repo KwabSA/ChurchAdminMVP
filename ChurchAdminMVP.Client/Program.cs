@@ -11,5 +11,6 @@ builder.Services.AddScoped(sp => new HttpClient
 });
 
 builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<TokenService>();
 
 await builder.Build().RunAsync();
