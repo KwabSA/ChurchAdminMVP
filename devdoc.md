@@ -121,3 +121,41 @@ All environment setup done. Database live. Ready for API development.
 | GET /api/Members        | ✅ Auth required             |
 | POST /api/Members       | ✅ Auth + UserId auto-linked |
 | PUT /api/Members/{id}   | ✅ Auth + owner-only         |
+
+### Step 14 (continued): JWT Claim Fix
+
+- Issue: 401 Unauthorized despite valid token
+- Root cause: AddAuthentication().AddJwtBearer() block was missing entirely from Program.cs after a cleanup
+- Root cause 2: JWT Sub claim used JwtRegisteredClaimNames.Sub instead of ClaimTypes.NameIdentifier — caused claim mapping mismatch with [Authorize]
+- Fix: Added full JWT Bearer authentication registration + corrected claim type
+- Verified: GET/POST /api/Members now correctly authenticate via Bearer token
+- Status: ✅ Resolved
+
+### Step 15: Blazor Frontend — MudBlazor Setup
+
+- Date: 17-JUN-2026
+- Installed MudBlazor on Client project (UI rendering layer)
+- Installed MudBlazor on Server project (required for prerendering compatibility)
+- Decision: Stick with MudBlazor (Material Design) for MVP speed; revisit Tailwind CSS post-MVP for public-facing branding
+- Removed unused Bootstrap CSS link from App.razor (MudBlazor doesn't need it)
+- Status: ✅ Complete
+
+### Step 15.1: Register Page
+
+- Created ChurchAdminMVP.Client/Pages/Register.razor
+- Created ChurchAdminMVP.Client/Services/AuthService.cs (service layer pattern — API calls separated from UI)
+- Issue: InvalidOperationException — HttpClient/AuthService not registered, page failing on server-side prerender
+- Root cause: .NET 10 Blazor Web App prerenders pages on server by default before WebAssembly takes over
+- Fix: Changed rendermode in App.razor to `new InteractiveWebAssemblyRenderMode(prerender: false)` for both HeadOutlet and Routes
+- Test: Registered member1@churchtest.me successfully — 200 OK, user created in AspNetUsers table
+- Status: ✅ Complete
+
+---
+
+## Phase 1 Frontend Progress
+
+| Page                | Status     |
+| ------------------- | ---------- |
+| Register            | ✅ Working |
+| Login               | 🔜 Next    |
+| Profile (view/edit) | 🔜 Pending |
