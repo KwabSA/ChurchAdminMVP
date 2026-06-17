@@ -1,0 +1,84 @@
+@page "/register"
+@using ChurchAdminMVP.Client.Services
+@rendermode InteractiveWebAssembly
+@inject AuthService AuthService
+@inject NavigationManager Nav
+
+<MudContainer MaxWidth="MaxWidth.Small" Class="mt-8">
+    <MudCard>
+        <MudCardHeader>
+            <CardHeaderContent>
+                <MudText Typo="Typo.h5">Create Account</MudText>
+                <MudText Typo="Typo.body2" Color="Color.Secondary">
+                    Join OLACC Madina West Community
+                </MudText>
+            </CardHeaderContent>
+        </MudCardHeader>
+
+        <MudCardContent>
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <MudAlert Severity="Severity.Error" Class="mb-4">@errorMessage</MudAlert>
+            }
+            @if (registrationSuccess)
+            {
+                <MudAlert Severity="Severity.Success" Class="mb-4">
+                    Registration successful! <MudLink Href="/login">Login here</MudLink>
+                </MudAlert>
+            }
+
+            <MudTextField @bind-Value="email" 
+                         Label="Email" 
+                         InputType="InputType.Email" 
+                         Variant="Variant.Outlined" 
+                         Class="mb-3" FullWidth="true" />
+
+            <MudTextField @bind-Value="password" 
+                         Label="Password" 
+                         InputType="InputType.Password" 
+                         Variant="Variant.Outlined" 
+                         Class="mb-3" FullWidth="true" />
+        </MudCardContent>
+
+        <MudCardActions Class="pa-4">
+            <MudButton Variant="Variant.Filled" 
+                      Color="Color.Primary" 
+                      FullWidth="true"
+                      OnClick="HandleRegister"
+                      Disabled="isLoading">
+                @if (isLoading)
+                {
+                    <MudProgressCircular Size="Size.Small" Indeterminate="true" Class="mr-2" />
+                }
+                Register
+            </MudButton>
+        </MudCardActions>
+    </MudCard>
+
+    <MudText Align="Align.Center" Class="mt-4">
+        Already have an account? <MudLink Href="/login">Login</MudLink>
+    </MudText>
+</MudContainer>
+
+@code {
+    private string email = string.Empty;
+    private string password = string.Empty;
+    private string errorMessage = string.Empty;
+    private bool isLoading = false;
+    private bool registrationSuccess = false;
+
+    private async Task HandleRegister()
+    {
+        isLoading = true;
+        errorMessage = string.Empty;
+
+        var (success, message) = await AuthService.RegisterAsync(email, password);
+
+        if (success)
+            registrationSuccess = true;
+        else
+            errorMessage = message;
+
+        isLoading = false;
+    }
+}

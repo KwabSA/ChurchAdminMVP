@@ -101,3 +101,23 @@ All environment setup done. Database live. Ready for API development.
 - Login test: 200 OK + JWT token returned ✅
 - Fix applied: Switched to Session pooler port 5432 — resolves timeout issues
 - Status: ✅ Complete
+
+### Step 14: Protected Members API + JWT Auth Complete
+
+- Date: 16-JUN-2026
+- Fix applied: Added missing AddAuthentication().AddJwtBearer() block to Program.cs
+- Fix applied: Changed Sub claim to ClaimTypes.NameIdentifier for correct mapping
+- POST /api/Members: 201 Created with auto-assigned UserId ✅
+- GET /api/Members: 200 OK returns user-scoped member profile ✅
+- GET without token: 401 Unauthorized ✅
+- Status: ✅ Complete
+
+## Phase 1 Backend Summary
+
+| Endpoint                | Status                       |
+| ----------------------- | ---------------------------- |
+| POST /api/Auth/register | ✅                           |
+| POST /api/Auth/login    | ✅ JWT returned              |
+| GET /api/Members        | ✅ Auth required             |
+| POST /api/Members       | ✅ Auth + UserId auto-linked |
+| PUT /api/Members/{id}   | ✅ Auth + owner-only         |
