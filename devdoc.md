@@ -95,7 +95,7 @@ All environment setup done. Database live. Ready for API development.
 
 ### Step 13: Auth Controller (Register + Login)
 
-- Date: [today's date]
+- Date: 13-JUN-2026
 - Endpoints: POST /api/Auth/register, POST /api/Auth/login
 - Register test: 200 OK ✅
 - Login test: 200 OK + JWT token returned ✅

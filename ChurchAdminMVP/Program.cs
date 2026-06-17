@@ -1,8 +1,9 @@
 using ChurchAdminMVP.Components;
 using ChurchAdminMVP.Data;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -49,8 +50,7 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddOpenApi();
 
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
@@ -58,9 +58,9 @@ builder.Services.AddRazorComponents()
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
+{ 
+    app.MapOpenApi();
+    app.MapScalarApiReference();
     app.UseWebAssemblyDebugging();
 }
 else
@@ -69,15 +69,15 @@ else
     app.UseHsts();
 }
 
-app.UseStatusCodePagesWithReExecute("/not-found");
 app.UseHttpsRedirection();
-app.UseAntiforgery();
 app.UseAuthentication();
 app.UseAuthorization();
-app.MapStaticAssets();
 app.MapControllers();
+app.MapStaticAssets();
+app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(ChurchAdminMVP.Client._Imports).Assembly);
 
 app.Run();
+
